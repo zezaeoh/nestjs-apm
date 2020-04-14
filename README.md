@@ -3,13 +3,13 @@
 
 ## Installation
 ```
-$ npm i nestjs-apm
+$ yarn add @dano/apm
 ```
 ## NestJs config
 ### main.ts (first line)
 
 ```
-import { apm } from 'nestjs-apm';
+import { apm } from '@dano/apm';
 ...
 ```
 
@@ -23,7 +23,7 @@ if (apm.isStarted()) {
 
 ```
 ...
-import { ApmModule } from 'nestjs-apm';
+import { ApmModule } from '@dano/apm';
 ...
 ```
 
@@ -41,7 +41,8 @@ export class AppModule { }
 
 ### Env variables
 ```
-ELASTIC_APM_SERVER_URL=
-ELASTIC_APM_LOG_LEVEL=
-ELASTIC_APM_SERVICE_NAME=
+APP=
+VERSION=
+APM_URL=
+NODE_ENV=
 ```
