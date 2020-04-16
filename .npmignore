@@ -63,6 +63,7 @@ typings/
 
 # NPM  
 src
+lib
 example
 gulpfile.js
 .prettierrc
